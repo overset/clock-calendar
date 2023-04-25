@@ -1,0 +1,33 @@
+{
+  "name": "clock-calendar",
+  "version": "1.0.0",
+  "description": "Simple Electron app with persistent clock and google calendar",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/overset/clock-calendar.git"
+  },
+  "author": "Jim Palmer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/overset/clock-calendar/issues"
+  },
+  "homepage": "https://github.com/overset/clock-calendar#readme",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1",
+    "electron": "^24.1.2"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}

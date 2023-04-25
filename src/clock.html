@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body {
+            background: #000;
+            -webkit-app-region: drag;
+        }
+        #clock {
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            color: #ddd;
+            font-family: 'Inter', sans-serif;
+            font-size: 80px;
+            user-select: none;
+            cursor: default;
+        }
+    </style>
+    <script type="text/javascript">
+        window.setInterval(function () {
+            const now = new Date();
+            const hours = String(now.getHours() % 12 || 12).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            document.getElementById('clock').innerHTML = hours + ':' + minutes;
+        }, 200);
+    </script>
+  </head>
+  <body>
+    <div id="clock">:</div>
+  </body>
+</html>
