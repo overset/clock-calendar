@@ -9,10 +9,6 @@ const createWindow = () => {
     title: "CAL",
     titleBarStyle: 'hidden',
     frame: false,
-    // webPreferences: {
-    //   experimentalFeatures: true,
-    //   enableBlinkFeatures: "WebContentsForceDark:inversion_method/cielab_based/image_behavior/none/text_lightness_threshold/150/background_lightness_threshold/205",
-    // },
   })
 
   const viewClock = new BrowserView({ backgroundColor: '#000', darkTheme: true })
@@ -40,6 +36,3 @@ app.whenReady().then(() => {
 app.on('window-all-closed', () => {
   app.quit()
 })
-
-// app.commandLine.appendSwitch('enable-features', 'WebContentsForceDark:inversion_method/cielab_based/image_behavior/none/text_lightness_threshold/150/background_lightness_threshold/205');
-// app.commandLine.appendSwitch('enable-experimental-web-platform-features');
