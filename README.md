@@ -14,7 +14,12 @@ This leverages the Electron BrowserView to display a persistent clock on the top
 * Right Click on clock immediately crashes Electron and appears to only happen since it is decorated as `-webkit-app-region: drag` style to allow it to drag the app window
 * Google auth forces a new window which never returns to the primary electron window - workaround is to restart the app after login
 
-## Project Init & Build
+### TODO
+
+* Explore Tauri port to reduce Electron bloat
+* Explore ways to force dark mode for Google Calendar BrowserView
+
+### Project Init & Build
 
 ```bash
 $ npm init
