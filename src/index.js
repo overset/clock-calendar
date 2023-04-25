@@ -1,4 +1,4 @@
-const { app, BrowserView, BrowserWindow, nativeTheme } = require('electron')
+const { app, BrowserView, BrowserWindow } = require('electron')
 const path = require('path')
 
 const createWindow = () => {
@@ -22,8 +22,6 @@ const createWindow = () => {
   viewCal.setAutoResize({ width: true, height: true, horizontal: true, vertical: false })
   viewCal.setBounds({ x: 0, y: 125, width: 1024, height: 500 })
   viewCal.webContents.loadURL('https://calendar.google.com/calendar/u/1/r/week')
-
-  nativeTheme.themeSource = 'dark';
 }
 
 app.whenReady().then(() => {
